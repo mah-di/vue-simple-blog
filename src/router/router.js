@@ -10,6 +10,7 @@ import PostView from '@/views/PostView.vue'
 // import { useStore } from 'vuex'
 import LoginViewPinia from '@/views/pinia-style/LoginViewPinia.vue'
 import useStore from '@/store/piniaStore'
+import InfinteBlogView from '@/views/InfinteBlogView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,11 @@ const router = createRouter({
       path: '/blog',
       name: 'blog',
       component: BlogView
+    },
+    {
+      path: '/blog/infinite',
+      name: 'infinite-blog',
+      component: InfinteBlogView
     },
     {
       path: '/post/:id',

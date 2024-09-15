@@ -66,6 +66,12 @@ function logout() {
         :to="{ name: 'blog' }"
         >Blog</router-link
       >
+      <router-link
+        class="block p-5 border-b-4 border-b-violet-800 hover:bg-green-600 hover:border-b-violet-600"
+        :class="route.name == 'infinite-blog' ? ['bg-green-600', 'border-b-violet-600'] : ''"
+        :to="{ name: 'infinite-blog' }"
+        >Infinite Blog</router-link
+      >
       <!-- pinia -->
       <router-link
         v-if="!store.isAuthenticated"
